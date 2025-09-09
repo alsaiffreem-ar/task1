@@ -1,0 +1,156 @@
+
+Clink v1.7.22 is available.
+- To apply the update, run 'clink update'.
+- To stop checking for updates, run 'clink set clink.autoupdate off'.
+- To view the release notes, visit the Releases page:
+  https://github.com/chrisant996/clink/releases
+
+C:\Users\asfal
+λ cd C:\Users\asfal\OneDrive\Desktop
+
+C:\Users\asfal\OneDrive\Desktop (main)
+λ mkdir myfirsttask
+
+C:\Users\asfal\OneDrive\Desktop (main)
+λ cd myfirsttask
+
+C:\Users\asfal\OneDrive\Desktop\myfirsttask (main)
+λ uv venv my_env
+Using CPython 3.9.1 interpreter at: C:\Users\asfal\AppData\Local\Programs\Python\Python39\python.exe
+Creating virtual environment at: my_env
+Activate with: my_env\Scripts\activate
+
+C:\Users\asfal\OneDrive\Desktop\myfirsttask (main)
+λ my_env\Scripts\activat
+'my_env\Scripts\activat' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\asfal\OneDrive\Desktop\myfirsttask (main)
+λ uv init
+Adding `myfirsttask` as member of workspace `C:\Users\asfal\OneDrive\Desktop`
+Initialized project `myfirsttask`
+
+C:\Users\asfal\OneDrive\Desktop\myfirsttask (main)
+λ pip install pandas
+Requirement already satisfied: pandas in c:\users\asfal\appdata\local\programs\python\python39\lib\site-packages (2.3.2)
+Requirement already satisfied: numpy>=1.22.4 in c:\users\asfal\appdata\local\programs\python\python39\lib\site-packages (from pandas) (2.0.2)
+Requirement already satisfied: python-dateutil>=2.8.2 in c:\users\asfal\appdata\local\programs\python\python39\lib\site-packages (from pandas) (2.9.0.post0)
+Requirement already satisfied: pytz>=2020.1 in c:\users\asfal\appdata\local\programs\python\python39\lib\site-packages (from pandas) (2025.2)
+Requirement already satisfied: tzdata>=2022.7 in c:\users\asfal\appdata\local\programs\python\python39\lib\site-packages (from pandas) (2025.2)
+Requirement already satisfied: six>=1.5 in c:\users\asfal\appdata\local\programs\python\python39\lib\site-packages (from python-dateutil>=2.8.2->pandas) (1.17.0)
+
+C:\Users\asfal\OneDrive\Desktop\myfirsttask (main)
+λ pip install pandas matplotlib
+Requirement already satisfied: pandas in c:\users\asfal\appdata\local\programs\python\python39\lib\site-packages (2.3.2)
+Requirement already satisfied: matplotlib in c:\users\asfal\appdata\local\programs\python\python39\lib\site-packages (3.9.4)
+Requirement already satisfied: numpy>=1.22.4 in c:\users\asfal\appdata\local\programs\python\python39\lib\site-packages (from pandas) (2.0.2)
+Requirement already satisfied: python-dateutil>=2.8.2 in c:\users\asfal\appdata\local\programs\python\python39\lib\site-packages (from pandas) (2.9.0.post0)
+Requirement already satisfied: pytz>=2020.1 in c:\users\asfal\appdata\local\programs\python\python39\lib\site-packages (from pandas) (2025.2)
+Requirement already satisfied: tzdata>=2022.7 in c:\users\asfal\appdata\local\programs\python\python39\lib\site-packages (from pandas) (2025.2)
+Requirement already satisfied: contourpy>=1.0.1 in c:\users\asfal\appdata\local\programs\python\python39\lib\site-packages (from matplotlib) (1.3.0)
+Requirement already satisfied: cycler>=0.10 in c:\users\asfal\appdata\local\programs\python\python39\lib\site-packages (from matplotlib) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in c:\users\asfal\appdata\local\programs\python\python39\lib\site-packages (from matplotlib) (4.59.2)
+Requirement already satisfied: kiwisolver>=1.3.1 in c:\users\asfal\appdata\local\programs\python\python39\lib\site-packages (from matplotlib) (1.4.7)
+Requirement already satisfied: packaging>=20.0 in c:\users\asfal\appdata\local\programs\python\python39\lib\site-packages (from matplotlib) (25.0)
+Requirement already satisfied: pillow>=8 in c:\users\asfal\appdata\local\programs\python\python39\lib\site-packages (from matplotlib) (11.3.0)
+Requirement already satisfied: pyparsing>=2.3.1 in c:\users\asfal\appdata\local\programs\python\python39\lib\site-packages (from matplotlib) (3.2.3)
+Requirement already satisfied: importlib-resources>=3.2.0 in c:\users\asfal\appdata\local\programs\python\python39\lib\site-packages (from matplotlib) (6.5.2)Requirement already satisfied: zipp>=3.1.0 in c:\users\asfal\appdata\local\programs\python\python39\lib\site-packages (from importlib-resources>=3.2.0->matplotlib) (3.23.0)
+Requirement already satisfied: six>=1.5 in c:\users\asfal\appdata\local\programs\python\python39\lib\site-packages (from python-dateutil>=2.8.2->pandas) (1.17.0)
+
+C:\Users\asfal\OneDrive\Desktop\myfirsttask (main)
+λ pip freeze > requirments.tx
+
+C:\Users\asfal\OneDrive\Desktop\myfirsttask (main)
+λ pip freeze > requirments.txt
+
+C:\Users\asfal\OneDrive\Desktop\myfirsttask (main)
+λ echo import pandas as pd> main.py
+
+C:\Users\asfal\OneDrive\Desktop\myfirsttask (main)
+λ echo import matplotlib.pyplot as plt>> main.py
+
+C:\Users\asfal\OneDrive\Desktop\myfirsttask (main)
+λ echo.>> main.py
+
+C:\Users\asfal\OneDrive\Desktop\myfirsttask (main)
+λ echo df = pd.read_csv("data.csv")>> main.py
+
+C:\Users\asfal\OneDrive\Desktop\myfirsttask (main)
+λ echo df.columns = df.columns.str.strip()>> main.py
+
+C:\Users\asfal\OneDrive\Desktop\myfirsttask (main)
+λ echo.>> main.py
+
+C:\Users\asfal\OneDrive\Desktop\myfirsttask (main)
+λ echo print("CSV Data:")>> main.py
+
+C:\Users\asfal\OneDrive\Desktop\myfirsttask (main)
+λ echo print(df)>> main.py
+
+C:\Users\asfal\OneDrive\Desktop\myfirsttask (main)
+λ echo.>> main.py
+
+C:\Users\asfal\OneDrive\Desktop\myfirsttask (main)
+λ echo plt.bar(df["Name"], df["Age"])>> main.py
+
+C:\Users\asfal\OneDrive\Desktop\myfirsttask (main)
+λ echo plt.xlabel("Name")>> main.py
+
+C:\Users\asfal\OneDrive\Desktop\myfirsttask (main)
+λ echo plt.ylabel("Age")>> main.py
+
+C:\Users\asfal\OneDrive\Desktop\myfirsttask (main)
+λ echo plt.title("Age of People")>> main.py
+
+C:\Users\asfal\OneDrive\Desktop\myfirsttask (main)
+λ echo plt.show()>> main.py
+
+C:\Users\asfal\OneDrive\Desktop\myfirsttask (main)
+λ echo Name,Age> data.csv
+
+C:\Users\asfal\OneDrive\Desktop\myfirsttask (main)
+λ echo Reem,20>> data.csv
+
+C:\Users\asfal\OneDrive\Desktop\myfirsttask (main)
+λ echo Abdullah,21>> data.csv
+
+C:\Users\asfal\OneDrive\Desktop\myfirsttask (main)
+λ  git init
+Initialized empty Git repository in C:/Users/asfal/OneDrive/Desktop/myfirsttask/.git/
+
+C:\Users\asfal\OneDrive\Desktop\myfirsttask (master)
+λ git add .
+warning: in the working copy of 'pyproject.toml', LF will be replaced by CRLF the next time Git touches it
+
+C:\Users\asfal\OneDrive\Desktop\myfirsttask (master)
+λ git commit -m "first commit"
+[master (root-commit) 89c875c] first commit
+ 6 files changed, 68 insertions(+)
+ create mode 100644 README.md
+ create mode 100644 data.csv
+ create mode 100644 main.py
+ create mode 100644 pyproject.toml
+ create mode 100644 requirments.tx
+ create mode 100644 requirments.txt
+
+C:\Users\asfal\OneDrive\Desktop\myfirsttask (master)
+λ git remote add origin https://github.com/alsaiffreem-
+ar/task1.git
+
+C:\Users\asfal\OneDrive\Desktop\myfirsttask (master)
+λ git branch -M main
+
+C:\Users\asfal\OneDrive\Desktop\myfirsttask (main)
+λ git push -u origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 949 bytes | 237.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/alsaiffreem-ar/task1.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+C:\Users\asfal\OneDrive\Desktop\myfirsttask (main -> origin)
+λ notepad mycode.txt
